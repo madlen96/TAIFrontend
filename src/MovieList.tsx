@@ -34,7 +34,7 @@ class MovieList extends React.Component<MovieListProps, MovieListState> {
         this.setState({isLoading: true});
 
         try {
-            const response = await fetch('http://localhost:8080/good-movies', {
+            const response = await fetch('https://tvshowsprogresser.herokuapp.com/good-movies', {
                 headers: {
                     Authorization: 'Bearer ' + await this.props.auth.getAccessToken()
                 }
