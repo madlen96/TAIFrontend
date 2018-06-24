@@ -6,7 +6,7 @@ import { ImplicitCallback, Security } from '@okta/okta-react';
 
 const config = {
   issuer: 'https://dev-380192.oktapreview.com/oauth2/default',
-  redirectUri: 'https://tv-shows-progresser.herokuapp.com' + '/implicit/callback',
+  redirectUri: window.location.origin + '/implicit/callback',
   clientId: '0oaf4lvtrs4NfXz330h7'
 };
 
