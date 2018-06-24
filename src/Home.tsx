@@ -87,7 +87,7 @@ export default withAuth(class Home extends React.Component<HomeProps, HomeState>
         let movieList = null;
         let noMovieList = null;
         let listFound = this.state.list.map((d) => <li key={d.id}>{d.title}</li>);
-        if (!authenticated) {
+        if (authenticated) {
             button = (
                 <div className="Buttons">
                     <button onClick={this.logout}>Logout</button>
