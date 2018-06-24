@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { Auth } from './App';
-// import GiphyImage from './GiphyImage';
 
 interface Movie {
     id: string;
