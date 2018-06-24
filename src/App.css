@@ -129,7 +129,7 @@ input[type="text"]:hover
 {
     border: 5px solid #C42D46;
 }
-.textHeader {
+.textHeader, .divSearch, .noMovieList {
     text-shadow: 4px 1px 8px rgba(237, 221, 236, 1);
     font-weight: normal;
     font-variant: small-caps;
@@ -143,9 +143,13 @@ input[type="text"]:hover
     margin-top:-100px;
 }
 
-.divSearch{
+.divSearch {
+    margin-top:40px;
     font-size: 20px;
-    font-family: "Droid Sans";
-    word-spacing: 2pt;
-
+    padding-top: 20px;
+    line-height: 1.8;
+    /*font-family: "Droid Sans";*/
+}
+.noMovieList {
+    margin-top:90px;
 }
