@@ -43,7 +43,6 @@ export default withAuth(class Home extends React.Component<HomeProps, HomeState>
     }
 
     async handleSubmit(event) {
-        alert('A title was submitted: ' + this.state.inputval);
         event.preventDefault();
         axios.get('https://api.themoviedb.org/3/search/movie', {
             params: {
